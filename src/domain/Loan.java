@@ -9,6 +9,8 @@ public class Loan {
     private Date creationDate;
 
 
+
+
     private int termInYears;
     private String name;
 

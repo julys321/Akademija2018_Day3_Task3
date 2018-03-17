@@ -8,7 +8,7 @@ public class Task2DomainInitializer implements DomainInitializer {
 
     @Override
     public Loan[] initializeLoans() {
-        Loan[] loans = new Loan[10];
+        Loan[] loans = new Loan[11];
 
         loans[0] = new RealEstateLoan();
 
@@ -129,6 +129,18 @@ public class Task2DomainInitializer implements DomainInitializer {
         ((VehicleLoan)loans[9]).setMaximumAge(15);
         ((VehicleLoan)loans[9]).setModel("Opel Astra");
         loans[9].setName("VehicleLoan 9");
+
+        loans[10] = new VehicleLoan();
+
+        loans[10].setCreationDate(DateUtil.getDateFromString("2014-01-01"));
+        loans[10].setInterestRate(new BigDecimal(11.0));
+        loans[10].setPrice(new BigDecimal(19000));
+        loans[10].setRiskType(LoanRiskType.HIGH_RISK);
+        loans[10].setTermInYears(5);
+        ((VehicleLoan)loans[10]).setManufactured(DateUtil.getDateFromString("2014-01-01"));
+        ((VehicleLoan)loans[10]).setMaximumAge(5);
+        ((VehicleLoan)loans[10]).setModel("ZAZ 3000");
+        loans[10].setName("VehicleLoan 6");
 
         return loans;
     }

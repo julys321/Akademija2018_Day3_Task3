@@ -1,5 +1,7 @@
 package domain;
 
+import util.DateUtil;
+
 import java.util.Date;
 
 public class VehicleLoan extends Loan{
@@ -26,6 +28,8 @@ public class VehicleLoan extends Loan{
     }
 
     public int getAge() {
+        age = (int) DateUtil.differenceInDays(new Date(),this.getManufactured());
+        age = age / 365;
         return age;
     }
 
