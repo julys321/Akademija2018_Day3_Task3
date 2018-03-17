@@ -1,8 +1,5 @@
 package domain;
 
-import domain.DomainInitializer;
-import domain.Loan;
-import domain.LoanRiskType;
 import util.DateUtil;
 
 import java.math.BigDecimal;

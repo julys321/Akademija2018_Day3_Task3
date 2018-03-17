@@ -5,6 +5,8 @@ public class PaymentSystem implements PaymentSystemInterface {
 
     public String name;
 
+    public int a;
+
 //    public final int age;
 
     public PaymentSystem() {
