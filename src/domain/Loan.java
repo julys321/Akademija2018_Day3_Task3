@@ -12,6 +12,7 @@ public class Loan {
 
 
     private int termInYears;
+
     private String name;
 
 
@@ -61,6 +62,10 @@ public class Loan {
 
     public void setRiskType(LoanRiskType riskType) {
         this.riskType = riskType;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public Date getCreationDate() {

@@ -14,6 +14,7 @@ public class LoanService {
         this.loans = loans;
     }
 
+    //Task 2
     public List<Loan> getExpiredHighRiskVehicleLoansOfHighestDuration() {
         List<Loan> expiredHighRiskVehicleLoans = new ArrayList<>();
         int maximumDuration=0;
