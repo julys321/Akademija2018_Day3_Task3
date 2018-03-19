@@ -5,7 +5,6 @@ import util.DateUtil;
 import java.math.BigDecimal;
 
 public class Task3DomainInitializer implements DomainInitializer {
-
     @Override
     public Loan[] initializeLoans() {
         Loan[] loans = new Loan[12];

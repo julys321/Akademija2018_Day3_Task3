@@ -2,6 +2,7 @@ package domain;
 
 import util.DateUtil;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class VehicleLoan extends Loan{
@@ -9,6 +10,7 @@ public class VehicleLoan extends Loan{
     private String model;
     private int age;
     private int maximumAge;
+
 
     //getters and setters
     public Date getManufactured() {

@@ -9,8 +9,6 @@ public class Loan {
     private Date creationDate;
 
 
-
-
     private int termInYears;
 
     private String name;
@@ -18,6 +16,8 @@ public class Loan {
 
     public BigDecimal interestRate;
     public BigDecimal price;
+
+
 
     public LoanRiskType riskType;
 
@@ -88,4 +88,7 @@ public class Loan {
         return calculateInterest().add(price);
     }
 
+    public LoanRiskType getRiskType() {
+        return riskType;
+    }
 }
